@@ -1,0 +1,58 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  .item {
+    .title {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 110%;
+      text-align: center;
+      margin-bottom: 18px;
+    }
+
+    .listPhoto {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+
+      .photoItem {
+        position: relative;
+
+        .check {
+          position: absolute;
+          top: 7px;
+          right: 7px;
+          background-color: var(--white);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 19px;
+          height: 19px;
+          border-radius: 100px;
+
+          .svg {
+            width: 15px;
+            height: 15px;
+          }
+
+          .svg path {
+            stroke: var(--primary-color);
+          }
+        }
+      }
+    }
+
+    .img {
+      display: block;
+      max-width: 103px;
+      max-height: 103px;
+    }
+
+    .active {
+      outline: 2px solid var(--primary-color);
+      border-radius: 16px;
+    }
+  }
+}

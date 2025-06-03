@@ -1,0 +1,37 @@
+.box {
+  .title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 110%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .item {
+      position: relative;
+      .img {
+        border-radius: 17px;
+        max-width: 327px;
+        max-height: 184px;
+      }
+
+      .descr {
+        border-radius: 13px;
+        padding: 5px 9px;
+        background-color: var(--btn-text);
+        position: absolute;
+        bottom: 19.9px;
+        left: 12.9px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 143%;
+        text-align: center;
+      }
+    }
+  }
+}

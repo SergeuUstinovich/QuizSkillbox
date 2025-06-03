@@ -1,0 +1,114 @@
+.listbox {
+  width: inherit;
+  position: relative;
+  margin-right: 8px;
+  max-width: 250px;
+}
+
+.trigger {
+  width: 69px;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 117%;
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+}
+
+.options {
+  margin-top: 5px;
+  padding: 0;
+  max-width: 156px !important;
+  width: 100%;
+  max-height: 230px !important;
+  overflow-y: auto;
+  position: absolute;
+  z-index: 20;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  background-color: var(--bg-card);
+
+  .item {
+    padding: 8px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 112%;
+    cursor: pointer;
+    list-style-type: none;
+    transition: background-color 0.1s ease-in-out;
+    color: var(--btn-text);
+  }
+
+  .item:not(:last-child) {
+    border-bottom: 1px solid var(--text-secondary);
+  }
+}
+
+.boxArrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2px;
+  margin-left: 4px;
+
+  .arrowSlideSvg {
+    transform: rotate(180deg);
+    width: 14px;
+    height: 14px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .arrowSlideSvg path {
+    stroke: var(--white);
+  }
+}
+
+.arrowSlideSvg.open {
+  transform: rotate(0);
+}
+
+.img {
+  margin-right: 8px;
+  width: 16px;
+}
+
+.descr {
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  margin-right: auto;
+}
+
+.checkedSvg path {
+  stroke: var(--primary-color);
+}
+
+.item.select {
+  color: var(--primary-color);
+  // background-color: var(--bg-list-color);
+}
+
+.item.active {
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
+.revers {
+  transform: rotate(180deg);
+}
+
+.disabled {
+  opacity: 0.7;
+}
+
+

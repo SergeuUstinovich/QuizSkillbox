@@ -1,0 +1,39 @@
+@font-face {
+  font-family: "Graphik";
+  src: local("Graphik"),
+    url("../../assets/fonts/GraphikRegularWeb.woff2") format("woff2"),
+    url("../../assets/fonts/GraphikRegularWeb.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: local("Graphik"),
+    url("../../assets/fonts/GraphikMediumWeb.woff2") format("woff2"),
+    url("../../assets/fonts/GraphikMediumWeb.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: local("Graphik"),
+    url("../../assets/fonts/GraphikSemiboldWeb.woff2") format("woff2"),
+    url("../../assets/fonts/GraphikSemiboldWeb.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Graphik";
+  src: local("Graphik"),
+    url("../../assets/fonts/GraphikBoldWeb.woff2") format("woff2"),
+    url("../../assets/fonts/GraphikBoldWeb.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

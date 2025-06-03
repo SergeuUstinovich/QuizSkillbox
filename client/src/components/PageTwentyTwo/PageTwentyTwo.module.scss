@@ -1,0 +1,110 @@
+.box {
+  .title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 110%;
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  .boxWell {
+    border: 3px solid var(--border-color);
+    border-radius: 15px;
+    margin-bottom: 30px;
+
+    .wellHead {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--primary-color);
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
+      padding: 8px 0;
+      gap: 6px;
+      margin-bottom: 15px;
+
+      .descr {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 125%;
+        color: var(--white);
+      }
+    }
+
+    .wellBody {
+      padding: 0 12px 12px 12px;
+
+      .boxFullPrice {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 5px;
+
+        .descrFullPrice {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 125%;
+          color: var(--price);
+
+          .span {
+            text-decoration: line-through;
+          }
+        }
+
+        .boxDiscount {
+          padding: 8px 11px;
+          font-weight: 500;
+          font-size: 13px;
+          line-height: 143%;
+          text-align: center;
+          color: var(--white);
+          background-color: var(--primary-color);
+          border-radius: 19px;
+        }
+      }
+
+      .newPrice {
+        display: flex;
+        gap: 3px;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 117%;
+        margin-bottom: 5px;
+
+        .newSpan {
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 125%;
+        }
+      }
+
+      .month {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 133%;
+      }
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    .item {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 110%;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      .point {
+        border-radius: 3px;
+        width: 6px;
+        height: 6px;
+        background: var(--primary-text);
+      }
+    }
+  }
+}

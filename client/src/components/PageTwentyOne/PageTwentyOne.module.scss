@@ -1,0 +1,56 @@
+.box {
+  .boxImg {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+    .item {
+        max-width: 145px;
+    }
+  }
+
+  .boxBar {
+    display: flex;
+    flex-direction: column;
+    .title {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 110%;
+      margin-bottom: 6px;
+    }
+
+    .descr {
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 110%;
+      text-transform: capitalize;
+      color: #9b99a9;
+      margin-bottom: 10px;
+    }
+
+    .progressContainer {
+      display: flex;
+      gap: 4px;
+      justify-content: center;
+    }
+
+    .segment {
+      width: 50px;
+      height: 4px;
+      background-color: #eee;
+      border-radius: 5px;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .active {
+      background: var(--primary-color);
+    }
+  }
+}

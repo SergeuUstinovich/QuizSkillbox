@@ -1,0 +1,41 @@
+.box {
+  .title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 110%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .item {
+      display: flex;
+      align-items: center;
+      padding: 8px;
+      border: 2px solid var(--border-color);
+      border-radius: 16px;
+      cursor: pointer;
+
+      .img {
+        margin-right: 16px;
+        border-radius: 16px;
+        max-width: 64px;
+        max-height: 64px;
+      }
+
+      .descr {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 110%;
+      }
+    }
+
+    .selected {
+      border-color: var(--primary-color);
+    }
+  }
+}

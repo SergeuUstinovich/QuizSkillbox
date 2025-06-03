@@ -1,0 +1,48 @@
+.boxTimer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid var(--border-color);
+  border-radius: 16px;
+  padding: 17px 8px;
+
+  .timer {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 110%;
+    color: var(--primary-color);
+  }
+
+  .btn {
+    border-radius: 14px;
+    padding: 13px 20px;
+    box-shadow: 2px 5px 5px 0 rgba(163, 173, 210, 0.5),
+      inset -2px -2px 4px 0 rgba(255, 255, 255, 0.15);
+    background: radial-gradient(
+        76.16% 76.16% at 31.97% 19.67%,
+        #fff 0%,
+        rgba(255, 255, 255, 0) 69.79%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      var(--primary-color);
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color: var(--white);
+
+    animation: shake 1.5s ease-in-out infinite;
+    transform-origin: center;
+  }
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: scale(1) rotate(0deg);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: scale(1.02) rotate(-1deg);
+  }
+  20%, 40%, 60%, 80% {
+    transform: scale(0.98) rotate(1deg);
+  }
+}

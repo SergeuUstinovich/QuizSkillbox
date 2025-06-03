@@ -1,0 +1,68 @@
+.box {
+  .title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 110%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .card {
+    background: var(--bg-card);
+    border-radius: 16px;
+    padding: 18px 19px;
+
+    .swiper {
+      .slide {
+        .boxCard {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .boxSlide {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin-bottom: 29px;
+            .img {
+              border-radius: 15px;
+              max-width: 289px;
+              max-height: 162px;
+            }
+          }
+
+          .info {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 122%;
+            color: var(--btn-text);
+            margin-bottom: 18px;
+          }
+          .descr {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 120%;
+            color: var(--btn-text);
+          }
+        }
+      }
+      .boxBtn {
+        padding-top: 29px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        .btn {
+          border: 0.66px solid var(--white);
+          border-radius: 6px;
+          padding: 7px 13px;
+
+          .svgUp {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+}
