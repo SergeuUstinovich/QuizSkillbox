@@ -11,7 +11,7 @@ interface PageEightProps {
   data: Page8Type;
 }
 
-const api_url = import.meta.env.VITE_API_BASE_URL;
+const api_url = "https://quiz.skillbox.by";
 
 export function PageEight({ data }: PageEightProps) {
   const swiperRef = useRef<any>(null);

@@ -7,7 +7,7 @@ interface PageFourteenProps {
   data: Page14Type;
 }
 
-const api_url = import.meta.env.VITE_API_BASE_URL;
+const api_url = "https://quiz.skillbox.by";
 
 export function PageFourteen({ title, data }: PageFourteenProps) {
   return (

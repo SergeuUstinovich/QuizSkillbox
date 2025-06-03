@@ -1,24 +1,11 @@
 services:
-  client:
+  nginx:
+    container_name: skillbox-quiz-nginx
     build:
-      context: client
-    container_name: client
-    env_file:
-      - .env
-    restart: always
-    deploy:
-      resources:
-        limits:
-          cpus: "0.5"
-    labels:
-      - "traefik.enable=true"
-      - "traefik.http.routers.quiz.rule=Host(`quiz.skillbox.by`)"
-      - "traefik.http.routers.quiz.entrypoints=https"
-      - "traefik.http.routers.quiz.tls.certresolver=le"
-      - "traefik.http.services.quiz.loadbalancer.server.port=quiz_port"
+      context: ./client
+      target: quiz_nginx
     networks:
       - traefik-network
-
 
 networks:
   traefik-network:

@@ -12,10 +12,7 @@ interface PageSixteenProps {
   data: Page16Type;
 }
 
-const api_url =
-  import.meta.env.MODE === "development"
-    ? "/api"
-    : import.meta.env.VITE_API_BASE_URL;
+const api_url = "https://quiz.skillbox.by";
 
 export function PageSixteen({ title, data }: PageSixteenProps) {
   const swiperRef = useRef<any>(null);

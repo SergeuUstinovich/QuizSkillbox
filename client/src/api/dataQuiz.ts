@@ -1,13 +1,10 @@
 import axios from "axios";
 import { validateResponse } from "./validateResponse";
 
-const api_url =
-  import.meta.env.MODE === "development"
-    ? "/api"
-    : import.meta.env.VITE_API_BASE_URL;
+const api_url = "/api"
 
 export const api = axios.create({
-  baseURL: api_url + "/api",
+  baseURL: api_url,
   withCredentials: true,
 });
 
