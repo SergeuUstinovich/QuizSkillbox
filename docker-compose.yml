@@ -1,24 +1,23 @@
-client:
-  build:
-    context: client
-  container_name: client
-  ports:
-    - "3000:3000"
-  env_file:
-    - client/.env
-  restart: always
-  deploy:
-    resources:
-      limits:
-        cpus: "0.5"
-  labels:
-    - "traefik.enable=true"
-    - "traefik.http.routers.quiz.rule=Host(`quiz.skillbox.by`)"
-    - "traefik.http.routers.quiz.entrypoints=https"
-    - "traefik.http.routers.quiz.tls.certresolver=le"
-    - "traefik.http.services.quiz.loadbalancer.server.port=quiz_port"
-  networks:
-    - traefik-network
+services:
+  client:
+    build:
+      context: client
+    container_name: client
+    env_file:
+      - .env
+    restart: always
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.quiz.rule=Host(`quiz.skillbox.by`)"
+      - "traefik.http.routers.quiz.entrypoints=https"
+      - "traefik.http.routers.quiz.tls.certresolver=le"
+      - "traefik.http.services.quiz.loadbalancer.server.port=quiz_port"
+    networks:
+      - traefik-network
 
 
 networks:
