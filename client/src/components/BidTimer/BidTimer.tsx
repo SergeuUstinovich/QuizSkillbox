@@ -22,6 +22,10 @@ export function BidTimer() {
     setIsOpen(true);
   };
 
+  const handleClose = () => {
+    setIsOpen(false);
+  };
+
   return (
     <>
       <div className={style.boxTimer}>
@@ -30,7 +34,7 @@ export function BidTimer() {
           Оставить заявку
         </Button>
       </div>
-      <Modal isSpecial isOpen={isOpen}>
+      <Modal onClose={handleClose} isSpecial isOpen={isOpen} hiddenClose>
         <FormDataPost utmData={utmData?.utmData} />
       </Modal>
     </>

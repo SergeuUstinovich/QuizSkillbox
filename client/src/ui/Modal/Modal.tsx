@@ -3,6 +3,7 @@ import style from './Modal.module.scss'
 import Portal from '../Portal/Portal'
 import { classNames } from '../../utils/classNames'
 import { Button } from '../Button'
+import svgCross from '../../assets/svg/close.svg'
 
 interface ModalProps {
   children?: ReactNode
@@ -96,7 +97,7 @@ function Modal(props: ModalProps) {
             )}
             {hiddenClose && (
               <Button onClick={closeHandler} className={style.closeCross}>
-                {/* <CrossModalSvg /> */}
+                <img src={svgCross} alt="" />
               </Button>
             )}
             {children}

@@ -149,6 +149,10 @@ function Layout() {
     }
   }, [dataMainQuiz.data]);
 
+  const handleCloseModal = () => {
+    setIsOpenModal(false)
+  }
+
   return (
     <>
       <div className={style.container}>
@@ -213,7 +217,7 @@ function Layout() {
           </Button>
         </footer>
       </div>
-      <Modal isSpecial isOpen={isOpenModal}>
+      <Modal onClose={handleCloseModal} isSpecial isOpen={isOpenModal} hiddenClose>
         <FormDataPost utmData={utmData?.utmData} />
       </Modal>
     </>
