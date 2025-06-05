@@ -93,7 +93,7 @@ export function Quiz({
     ),
     6: (
       <RangeInput
-        title={dataBack.page6.title}
+        title={dataBack.page6.text}
         data6={arrPage6}
         src={page5light}
         selectedOptions={selectedOption[6]}
@@ -119,7 +119,7 @@ export function Quiz({
     11: (
       <PageEleven
         data={dataBack.page11}
-        title={dataBack.page8.title}
+        title={dataBack.page11.head}
         selectedOptions={selectedOption[11]}
         onSelect={(option) => onSelect(option, true)}
       />

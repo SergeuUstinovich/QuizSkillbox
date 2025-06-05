@@ -22,7 +22,7 @@ export function PagetTwelve() {
   return (
     <div className={style.box}>
       <h2 className={style.title}>
-        У тебя 93% мэтч с профессией графического дизайнера. Тебе точно нужно
+        У тебя 93% мэтч с профессией. Тебе точно нужно
         пройти курс, чтобы добиться жизни своей мечты
       </h2>
       <div className={style.progressBox}>

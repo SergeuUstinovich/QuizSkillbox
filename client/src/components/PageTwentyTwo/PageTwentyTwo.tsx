@@ -27,7 +27,8 @@ const dataList = [
 ];
 
 export function PageTwentyTwo({ data }: PageTwentyTwoProps) {
-  const newPrice = data.full_price - data.full_price * (data.discount / 100);
+  const fullPrice = Math.floor(data.full_price / (1 - data.discount / 100));
+
   return (
     <div className={style.box}>
       <BidTimer />
@@ -40,12 +41,12 @@ export function PageTwentyTwo({ data }: PageTwentyTwoProps) {
         <div className={style.wellBody}>
           <div className={style.boxFullPrice}>
             <p className={style.descrFullPrice}>
-              <span className={style.span}>{data.full_price}</span> BYN/мес
+              <span className={style.span}>{fullPrice}</span> BYN/мес
             </p>
             <div className={style.boxDiscount}>-{data.discount}%</div>
           </div>
           <p className={style.newPrice}>
-            {newPrice} <span className={style.newSpan}>BYN/мес</span>
+            {data.full_price} <span className={style.newSpan}>BYN/мес</span>
           </p>
           <p className={style.month}>В рассрочку на {data.month} месяцев</p>
         </div>
