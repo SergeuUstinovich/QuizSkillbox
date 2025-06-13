@@ -96,6 +96,12 @@
     }
   }
 
+  &.close {
+    .content {
+      transform: scale(0.5);
+    }
+  }
+
   .closeCross {
     margin-left: auto;
     padding: 0;

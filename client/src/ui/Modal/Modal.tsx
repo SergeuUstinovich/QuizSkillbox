@@ -74,15 +74,14 @@ function Modal(props: ModalProps) {
     }
   }, [isOpen, onKeyDown])
 
-  //для первого монтирования
-
-  if (lazy && !isMouned) {
-    return null
-  }
   const mods: Record<string, boolean | undefined> = {
     [style.open]: isOpen,
     [style.close]: isClosing,
     [style.special]: isSpecial,
+  }
+
+  if (lazy && !isMouned) {
+    return null
   }
 
   return (
