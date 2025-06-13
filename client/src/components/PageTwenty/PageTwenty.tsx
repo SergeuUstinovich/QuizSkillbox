@@ -8,7 +8,7 @@ export function PageTwenty() {
         У тебя все получится!
       </h2>
       <h2 style={{ marginBottom: "30px" }} className={style.title}>
-        Мы проанализировали и поняли, что с курсов Skillbox ты добьешься своих
+        Мы проанализировали и поняли, что с курсом Skillbox ты добьешься своих
         целей в короткий период
       </h2>
       <ProgressBar title={'Цели'} endCount={100} />
