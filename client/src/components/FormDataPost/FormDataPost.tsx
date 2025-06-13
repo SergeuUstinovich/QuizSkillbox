@@ -84,7 +84,6 @@ export function FormDataPost({ utmData }: FormDataPostProps) {
       <form
         onSubmit={handleSubmit(({ username, mobile_phone, email }) => {
           const cleaned = mobile_phone.replace(/[^\d]/g, "");
-
           dataResultMutate.mutate({
             username: username,
             phone: cleaned,
