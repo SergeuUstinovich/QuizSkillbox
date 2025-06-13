@@ -13,6 +13,7 @@ import { UtmData } from "../../provider/contexts/UtmContext";
 import { useMutation } from "@tanstack/react-query";
 import { dataResult } from "../../api/dataQuiz";
 import { queryClient } from "../../api/queryClient";
+import { TapGoogleMetrica } from "../../pages/Layout/TapGoogleMetrica";
 
 interface FormDataPostProps {
   utmData?: UtmData;
@@ -71,7 +72,8 @@ export function FormDataPost({ utmData }: FormDataPostProps) {
         ),
       onSuccess: () => {
         reset();
-      }
+        TapGoogleMetrica(22, utmData?.course_name, utmData?.direction);
+      },
     },
     queryClient
   );
@@ -157,7 +159,11 @@ export function FormDataPost({ utmData }: FormDataPostProps) {
             Не получилось отправить форму, попробуйте ещё раз!
           </span>
         )}
-        <Button type="submit" isDisabled={dataResultMutate.isPending || !isCheck} className={style.mainBtn}>
+        <Button
+          type="submit"
+          isDisabled={dataResultMutate.isPending || !isCheck}
+          className={style.mainBtn}
+        >
           Оставить заявку
         </Button>
       </form>

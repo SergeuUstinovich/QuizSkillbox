@@ -16,6 +16,7 @@ import { queryClient } from "../../api/queryClient";
 import { QuizType } from "../../types/QuizType";
 import { useUtm } from "../../provider/contexts/UtmContext";
 import { LoaderContent } from "../../ui/Loader/LoaderContent/LoaderContent";
+import { TapGoogleMetrica } from "./TapGoogleMetrica";
 
 export interface QuizData {
   [step: number]: string[];
@@ -46,11 +47,27 @@ function Layout() {
     if (data) {
       if (currentStep < totalSteps) {
         setCurrentStep((prev) => prev + 1);
+        TapGoogleMetrica(
+          currentStep,
+          utmData?.utmData.course_name,
+          utmData?.utmData.direction
+        );
       } else {
         setIsOpenModal(true);
       }
     }
   };
+
+  useEffect(() => {
+    if (currentStep === 1) {
+      TapGoogleMetrica(
+        1,
+        utmData?.utmData.course_name,
+        utmData?.utmData.direction
+      );
+    }
+  }, [currentStep]);
+
   const prev = () => {
     if (data) {
       setCurrentStep((prev) => Math.max(prev - 1, 1));
@@ -131,18 +148,17 @@ function Layout() {
   );
 
   useEffect(() => {
-    if(utmData?.utmData.course_name) {
+    if (utmData?.utmData.course_name) {
       const courseName = utmData.utmData.course_name;
-      const formattedName = courseName.split('.')[1];
-      if(formattedName) {
+      const formattedName = courseName.split(".")[1];
+      if (formattedName) {
         document.title = formattedName.trim();
       } else {
-        document.title = 'Skillbox Quiz';
+        document.title = "Skillbox Quiz";
       }
-      
     }
-  }, [utmData?.utmData.course_name])
-  
+  }, [utmData?.utmData.course_name]);
+
   useEffect(() => {
     if (dataMainQuiz.data) {
       setData(dataMainQuiz.data);
@@ -150,8 +166,8 @@ function Layout() {
   }, [dataMainQuiz.data]);
 
   const handleCloseModal = () => {
-    setIsOpenModal(false)
-  }
+    setIsOpenModal(false);
+  };
 
   return (
     <>
@@ -217,7 +233,12 @@ function Layout() {
           </Button>
         </footer>
       </div>
-      <Modal onClose={handleCloseModal} isSpecial isOpen={isOpenModal} hiddenClose>
+      <Modal
+        onClose={handleCloseModal}
+        isSpecial
+        isOpen={isOpenModal}
+        hiddenClose
+      >
         <FormDataPost utmData={utmData?.utmData} />
       </Modal>
     </>

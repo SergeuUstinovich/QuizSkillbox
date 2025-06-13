@@ -4,6 +4,7 @@ import { useLocation, useSearchParams } from 'react-router-dom';
 
 export interface UtmData {
   course_name: string | null;
+  direction: string | null;
   utm_source: string | null;
   utm_medium: string | null;
   utm_content: string | null;
@@ -22,6 +23,7 @@ export function UtmProvider({ children }: { children: ReactNode }) {
   const location = useLocation();
   const [utmData, setUtmData] = useState<UtmData>({
     course_name: null,
+    direction: null,
     utm_source: null,
     utm_medium: null,
     utm_content: null,
@@ -34,6 +36,7 @@ export function UtmProvider({ children }: { children: ReactNode }) {
     const currentFullUrl = window.location.origin + location.pathname + location.search;
     setUtmData({
       course_name: searchParams.get('course_name'),
+      direction: searchParams.get('direction'),
       utm_source: searchParams.get('utm_source'),
       utm_medium: searchParams.get('utm_medium'),
       utm_content: searchParams.get('utm_content'),
