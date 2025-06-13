@@ -29,7 +29,6 @@ function Modal(props: ModalProps) {
   const [isClosing, setIsClosing] = useState(false)
   const [isMouned, setIsMouned] = useState(false)
 
-  //для первого монтирования если передал lazy
   useEffect(() => {
     if (isOpen) {
       setIsMouned(true)
