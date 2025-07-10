@@ -67,7 +67,7 @@ export function Quiz({
     3: (
       <AnimatedGraf
         title={
-          "Все это ты сможешь позволить себе уже во время прохождения курса!"
+          "Давай посмотрим, как изменится соотношение стресса и заработка в твоей жизни с новой профессией!"
         }
         children={<Grafick currentStep={currentStep} isActive={isActive} />}
       />

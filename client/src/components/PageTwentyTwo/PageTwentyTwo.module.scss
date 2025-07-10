@@ -10,7 +10,6 @@
   .boxWell {
     border: 3px solid var(--border-color);
     border-radius: 15px;
-    margin-bottom: 30px;
 
     .wellHead {
       display: flex;
@@ -90,6 +89,7 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
+    margin-bottom: 30px;
 
     .item {
       font-weight: 400;

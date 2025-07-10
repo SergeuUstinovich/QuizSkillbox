@@ -17,6 +17,8 @@ export function Grafick({ isActive, currentStep }: ScheduleStressProps) {
           <div className={style.boxGraf}>
             <img className={style.img} src={coinImg} alt="" />
             <StressSvg className={`${isActive ? "active" : ""}`} />
+            <span className={style.stress}>Стресс</span>
+            <span className={style.money}>Заработок</span>
           </div>
         </>
       )}

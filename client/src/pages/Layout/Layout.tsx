@@ -79,7 +79,7 @@ function Layout() {
       case 14:
         return "Хочу также!";
       case totalSteps:
-        return "Оставить заявку";
+        return "Получить консультацию";
       default:
         return "Далее";
     }

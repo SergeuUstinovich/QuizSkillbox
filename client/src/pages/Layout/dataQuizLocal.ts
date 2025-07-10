@@ -1,10 +1,10 @@
 import table from "../../assets/png/1table.png";
 import table2 from "../../assets/png/2table.png";
 import table3 from "../../assets/png/3table.png";
-import table4 from "../../assets/png/4table.png";
-import table5 from "../../assets/png/5table.png";
-import table6 from "../../assets/png/6table.png";
-import table7 from "../../assets/png/7table.png";
+// import table4 from "../../assets/png/4table.png";
+// import table5 from "../../assets/png/5table.png";
+// import table6 from "../../assets/png/6table.png";
+// import table7 from "../../assets/png/7table.png";
 
 import switch1 from "../../assets/png/1switchWork.png";
 import switch2 from "../../assets/png/2switchWork.png";
@@ -38,7 +38,7 @@ export const dataQuizLocal = {
       {
         id: 1,
         description:
-          "Офисный ад достал! Хочу свободу, удалёнку и работу в пижаме",
+          "Хочу сменить профессию – надоело работать за копейки в нелюбимой сфере.",
         image: {
           id: 1,
           image_url: table,
@@ -48,7 +48,7 @@ export const dataQuizLocal = {
       {
         id: 2,
         description:
-          "Я уже в профессии, но хочу прокачать свои скилы для новых крутых проектов!",
+          "Хочу больше свободы и дохода – удалёнку, гибкий график и работу в пижаме",
         image: {
           id: 1,
           image_url: table2,
@@ -58,57 +58,57 @@ export const dataQuizLocal = {
       {
         id: 3,
         description:
-          "У меня всё огонь! Жизнь прекрасна, но хочется добавить новые навыки",
+          "Хочу прокачать навыки – чтобы брать крутые проекты и расти в доходах.",
         image: {
           id: 1,
           image_url: table3,
         },
         course_name: "",
       },
-      {
-        id: 4,
-        description:
-          "Хочу сменить профессию – текущая работа больше не вдохновляет",
-        image: {
-          id: 1,
-          image_url: table4,
-        },
-        course_name: "",
-      },
-      {
-        id: 5,
-        description:
-          "Мне не хватает творчества! Всё вокруг серое, а душа требует креатива",
-        image: {
-          id: 1,
-          image_url: table5,
-        },
-        course_name: "",
-      },
-      {
-        id: 6,
-        description:
-          "Чувствую, что топчусь на месте... Пора выйти из зоны комфорта!",
-        image: {
-          id: 1,
-          image_url: table6,
-        },
-        course_name: "",
-      },
-      {
-        id: 7,
-        description:
-          "Всё ок, но жажду новых знаний – не могу сидеть без развития",
-        image: {
-          id: 1,
-          image_url: table7,
-        },
-        course_name: "",
-      },
+      // {
+      //   id: 4,
+      //   description:
+      //     "Хочу сменить профессию – текущая работа больше не вдохновляет",
+      //   image: {
+      //     id: 1,
+      //     image_url: table4,
+      //   },
+      //   course_name: "",
+      // },
+      // {
+      //   id: 5,
+      //   description:
+      //     "Мне не хватает творчества! Всё вокруг серое, а душа требует креатива",
+      //   image: {
+      //     id: 1,
+      //     image_url: table5,
+      //   },
+      //   course_name: "",
+      // },
+      // {
+      //   id: 6,
+      //   description:
+      //     "Чувствую, что топчусь на месте... Пора выйти из зоны комфорта!",
+      //   image: {
+      //     id: 1,
+      //     image_url: table6,
+      //   },
+      //   course_name: "",
+      // },
+      // {
+      //   id: 7,
+      //   description:
+      //     "Всё ок, но жажду новых знаний – не могу сидеть без развития",
+      //   image: {
+      //     id: 1,
+      //     image_url: table7,
+      //   },
+      //   course_name: "",
+      // },
     ],
     course_name: "",
     title:
-      "Недоволен(льна) ли ты своим текущим положением дел? Если да, то почему?",
+      "Почему ты хочешь освоить графический дизайн?",
   },
 
   page2: {

@@ -1,28 +1,52 @@
 .box {
+  .title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 110%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
 
-    .title {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 110%;
-        text-align: center;
-        margin-bottom: 30px;
+  .boxGraf {
+    position: relative;
+
+    .img {
+      position: absolute;
+      right: 0;
+      top: 12%;
+      background: #c4d0fb;
+      border-radius: 6px;
+
+      animation: fadeIn 1s ease-in-out;
+      opacity: 0;
+      animation-fill-mode: forwards;
     }
 
-    .boxGraf { 
-        position: relative;
-
-        .img {
-            position: absolute;
-            right: 0;
-            top: 12%;
-            background: #c4d0fb;
-            border-radius: 6px;
-
-            animation: fadeIn 1s ease-in-out;
-            opacity: 0;
-            animation-fill-mode: forwards;
-        }
+    .stress {
+      position: absolute;
+      left: 0;
+      top: 40px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 110%;
+      animation: fadeIn 1s ease-in-out;
+      opacity: 0;
+      animation-fill-mode: forwards;
     }
+
+    .money {
+      position: absolute;
+      bottom: 45px;
+      left: 0;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 110%;
+      color: var(--primary-color);
+      animation: fadeIn 1s ease-in-out;
+      opacity: 0;
+      animation-fill-mode: forwards;
+    }
+  }
 }
 
 @keyframes fadeIn {

@@ -32,7 +32,15 @@ export function PageTwentyTwo({ data }: PageTwentyTwoProps) {
   return (
     <div className={style.box}>
       <BidTimer />
-      <h2 className={style.title}>{data.title}</h2>
+      <h2 className={style.title}>Оставляйте заявку и сохраняйте скидку + подарки</h2>
+      <ul className={style.list}>
+        {dataList.map((item) => (
+          <li key={item.id} className={style.item}>
+            <div className={style.point} />
+            <span>{item.text}</span>
+          </li>
+        ))}
+      </ul>
       <div className={style.boxWell}>
         <div className={style.wellHead}>
           <img src={img} alt="" />
@@ -51,14 +59,6 @@ export function PageTwentyTwo({ data }: PageTwentyTwoProps) {
           <p className={style.month}>В рассрочку на {data.month} месяцев</p>
         </div>
       </div>
-      <ul className={style.list}>
-        {dataList.map((item) => (
-          <li key={item.id} className={style.item}>
-            <div className={style.point} />
-            <span>{item.text}</span>
-          </li>
-        ))}
-      </ul>
     </div>
   );
 }
