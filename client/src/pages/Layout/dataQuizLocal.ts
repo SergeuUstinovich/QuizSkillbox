@@ -6,10 +6,10 @@ import table3 from "../../assets/png/3table.png";
 // import table6 from "../../assets/png/6table.png";
 // import table7 from "../../assets/png/7table.png";
 
-import switch1 from "../../assets/png/1switchWork.png";
-import switch2 from "../../assets/png/2switchWork.png";
-import switch3 from "../../assets/png/3switchWork.png";
-import switch4 from "../../assets/png/4switchWork.png";
+// import switch1 from "../../assets/png/1switchWork.png";
+// import switch2 from "../../assets/png/2switchWork.png";
+// import switch3 from "../../assets/png/3switchWork.png";
+// import switch4 from "../../assets/png/4switchWork.png";
 
 import dreams1 from "../../assets/png/dreams1.png";
 import dreams2 from "../../assets/png/dreams2.png";
@@ -38,7 +38,7 @@ export const dataQuizLocal = {
       {
         id: 1,
         description:
-          "Хочу сменить профессию – надоело работать за копейки в нелюбимой сфере.",
+          "Мужской",
         image: {
           id: 1,
           image_url: table,
@@ -48,17 +48,7 @@ export const dataQuizLocal = {
       {
         id: 2,
         description:
-          "Хочу больше свободы и дохода – удалёнку, гибкий график и работу в пижаме",
-        image: {
-          id: 1,
-          image_url: table2,
-        },
-        course_name: "",
-      },
-      {
-        id: 3,
-        description:
-          "Хочу прокачать навыки – чтобы брать крутые проекты и расти в доходах.",
+          "Женский",
         image: {
           id: 1,
           image_url: table3,
@@ -108,7 +98,7 @@ export const dataQuizLocal = {
     ],
     course_name: "",
     title:
-      "Почему ты хочешь освоить графический дизайн?",
+      "Укажите ваш пол:",
   },
 
   page2: {
@@ -117,47 +107,77 @@ export const dataQuizLocal = {
       {
         id: 1,
         description:
-          "Мечтаю о продуктовой компании – масштабные проекты и соцпакеты!",
+          "Хочу сменить профессию – надоело работать за копейки в нелюбимой сфере.",
         image: {
           id: 1,
-          image_url: switch1,
+          image_url: dreams1,
         },
         course_name: "",
       },
       {
         id: 2,
         description:
-          "Только фриланс! Хочу сам(а) выбирать проекты и график работы",
+          "Хочу больше свободы и дохода – удалёнку, гибкий график и работу в пижаме",
         image: {
           id: 1,
-          image_url: switch2,
+          image_url: table2,
         },
         course_name: "",
       },
       {
         id: 3,
         description:
-          "Открою свою студию – время воплощать свои идеи без оглядки на начальство",
+          "Хочу прокачать навыки – чтобы брать крутые проекты и расти в доходах.",
         image: {
           id: 1,
-          image_url: switch3,
+          image_url: dreams5,
         },
         course_name: "",
       },
-      {
-        id: 4,
-        description:
-          "Хочу в творческую тусовку! Вдохновляться командой и делать крутые штуки вместе",
-        image: {
-          id: 1,
-          image_url: switch4,
-        },
-        course_name: "",
-      },
+      // {
+      //   id: 1,
+      //   description:
+      //     "Мечтаю о продуктовой компании – масштабные проекты и соцпакеты!",
+      //   image: {
+      //     id: 1,
+      //     image_url: switch1,
+      //   },
+      //   course_name: "",
+      // },
+      // {
+      //   id: 2,
+      //   description:
+      //     "Только фриланс! Хочу сам(а) выбирать проекты и график работы",
+      //   image: {
+      //     id: 1,
+      //     image_url: switch2,
+      //   },
+      //   course_name: "",
+      // },
+      // {
+      //   id: 3,
+      //   description:
+      //     "Открою свою студию – время воплощать свои идеи без оглядки на начальство",
+      //   image: {
+      //     id: 1,
+      //     image_url: switch3,
+      //   },
+      //   course_name: "",
+      // },
+      // {
+      //   id: 4,
+      //   description:
+      //     "Хочу в творческую тусовку! Вдохновляться командой и делать крутые штуки вместе",
+      //   image: {
+      //     id: 1,
+      //     image_url: switch4,
+      //   },
+      //   course_name: "",
+      // },
     ],
     course_name: "",
     title:
-      "Если менять место работы, то какой формат тебе больше всего подходит?",
+      "Почему ты хочешь освоить графический дизайн?",
   },
   page4: {
     id: 3,
